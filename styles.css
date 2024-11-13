@@ -9,6 +9,62 @@ html {
   scroll-behavior: smooth;
 }
 
+canvas {
+  background: #eee;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ヘッダーのスタイルを定義 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(27, 214, 180);
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+  /* スクロールでも常に上に表示させる */
+}
+
+/* ナビゲーションのスタイル */
+nav {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--theme-color-2);
+}
+
+/* コンテンツの上部にスペースを作る */
+.content {
+  padding-top: 70px;
+  /* ヘッダーの高さ分のスペース */
+}
+
 body {
   color: var(--main-foreground);
   line-height: 1.5;
@@ -51,16 +107,14 @@ h2 {
   font-size: 200%;
   letter-spacing: 0.05em;
   font-weight: normal;
-  padding: 0 0 0 1.5em;
+  padding: 0 0 0 0.5em;
   border-bottom: 3px solid var(--theme-color-1);
 }
 
 h2::before {
   position: absolute;
-  left: 0.4em;
   font-weight: bold;
   font-family: "Font Awesome 6 Free";
-  content: "\f5ad";
   top: 0.2em;
   font-size: 85%;
   color: var(--theme-color-1);
@@ -96,26 +150,14 @@ a:hover {
 
 ul {
   list-style: none;
-  padding: 0;
   margin-block-start: 0.7em;
   margin-block-end: 0.7em;
 }
 
 ul li {
-  position: relative;
-  padding: 0 0 0 1.6em;
+  list-style-type: disc;
   margin: 0;
   text-indent: 0.5em;
-}
-
-ul li::before {
-  position: absolute;
-  left: 0.5em;
-  top: 0.4em;
-  font-size: 75%;
-  font-family: "Font Awesome 6 Free";
-  font-weight: bold;
-  content: "\f14a";
 }
 
 #page_top {
