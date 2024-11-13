@@ -5,94 +5,113 @@
   <meta charset="utf-8" />
   <title>kuroma's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <style>
-    canvas {
-      background: #eee;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#profile">プロフィール</a></li>
+        <li><a href="#works">製作物</a></li>
+        <li><a href="#skills">スキル</a></li>
+        <li><a href="#contact">コンタクト</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <!-- ここから本文開始 -->
-  <div id="page_top"><a href="#"></a></div>
+  <div class="content">
+    <div id="page_top"><a href="#"></a></div>
 
-  <h1>Portfolio</h1>
+    <h1>Portfolio</h1>
 
-  <h2>プロフィール</h2>
-  <p><strong>所属</strong></p>
-  <p>大阪公立大学工業高等専門学校 総合工学システム学科 知能情報コース 2年生</p>
-  <p>現代音楽部</p>
-  <p>フォークギター部</p>
-  <p><strong>得意な言語</strong></p>
-  <p>Python</p>
-  <p><strong>趣味</strong></p>
-  <li>ギター</li>
-  <li>西洋史</li>
-  <li>twich,youtube</li>
-  <li>ゲーム(ローグライク,シミュレーション)</li>
-  <li>読書</li>
+    <h2 id="profile">プロフィール</h2>
+    <p><strong>所属</strong></p>
+    <ul>
+      <li>大阪公立大学工業高等専門学校 総合工学システム学科 知能情報コース 2年生</li>
+      <li>現代音楽部</li>
+      <li>フォークギター部</li>
+    </ul>
+    <p><strong>得意な言語</strong></p>
+    <ul>
+      <li>Python</li>
+    </ul>
+    <p><strong>趣味</strong></p>
+    <ul>
+      <li>ギター</li>
+      <li>西洋史</li>
+      <li>twich,youtube</li>
+      <li>ゲーム(ローグライク,シミュレーション)</li>
+      <li>読書</li>
+    </ul>
 
+    <h2 id="works">製作物</h2>
+    <p><strong>本ポートフォリオ</strong></p>
+    <ul>
+      <li>二年次後期の自由課題として制作。</li>
+      <li>HTML/CSSで制作</li>
+      <li>Githubは<a href="https://github.com/kuroma514/kuroma-s-portfolio">こちら</a></li>
+    </ul>
 
-  <h2>製作物</h2>
-  <p><strong>本ポートフォリオ</strong></p>
-  <li>二年次後期の自由課題として制作。</li>
-  <li>HTML/CSSで制作</li>
-  <li>Githubは<a href="https://github.com/kuroma514/kuroma-s-portfolio">こちら</a></li>
+    <p><strong>オートバトル制のRPG風ローグライク</strong></p>
+    <ul>
+      <li>二年次前期の自由課題として制作。</li>
+      <li>Pythonで制作</li>
+      <li>Githubは<a href="https://github.com/kuroma514/Roguelike_RPG">こちら</a></li>
+      <li>GoogleColaboは<a href="https://colab.research.google.com/drive/1U-ZhaCBkrC1iDuRm8jd1U7MOZ5C83Cks?hl=ja">こちら</a>
+      </li>
+    </ul>
+    <div class="carousel_1">
+      <img src="img/RPG_img1.png">
+      <img src="img/RPG_img2.png">
+      <img src="img/RPG_img3.png">
+      <img src="img/RPG_img4.png">
+    </div>
 
+    <p><strong>学習支援ツール</strong></p>
+    <ul>
+      <li>総合課題実習においてチームで制作を行い、高専祭で展示した。</li>
+      <li>制作中</li>
+      <li>JavaScript, HTML/CSSで制作</li>
+      <li>リンクは<a href="https://github.com/misorange/CCC">こちら</a></li>
+    </ul>
+    <div class="carousel_2"></div>
 
-  <p><strong>オートバトル制のRPG風ローグライク</strong></p>
-  <li>二年次前期の自由課題として制作。</li>
-  <li>Pythonで制作</li>
-  <li>Githubは<a href="https://github.com/kuroma514/Roguelike_RPG">こちら</a>
-  <li>GoogleColaboは<a href="https://colab.research.google.com/drive/1U-ZhaCBkrC1iDuRm8jd1U7MOZ5C83Cks?hl=ja"></a>こちら
-  </li>
-  </li>
-  <p></p>
-  <div class="carousel_1"><img src="img/RPG_img1.png"><img src="img/RPG_img2.png"><img src="img/RPG_img3.png"><img
-      src="img/RPG_img4.png"></div>
+    <h2 id="skills">スキル</h2>
+    <p><strong>自主的に学習した</strong></p>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>HTML/CSS</li>
+    </ul>
+    <p><strong>授業で学習した</strong></p>
+    <ul>
+      <li>Scratch</li>
+      <li>Deeds-DCS</li>
+      <li>MakeCode for micro:bit</li>
+      <li>Arduino</li>
+      <li>ArduinoIDE</li>
+      <li>Tinkercad</li>
+      <li>C++</li>
+    </ul>
+    <p><strong>学習したい</strong></p>
+    <ul>
+      <li>Unreal Engine5</li>
+      <li>Unity</li>
+      <li>GameMaker</li>
+      <li>歴史能力検定(世界史)</li>
+      <li>TOEIC</li>
+    </ul>
 
-  <p><strong>学習支援ツール</strong></p>
-
-  <li>総合課題実習においてチームで制作を行い、高専祭で展示した。</li>
-  <li>制作中</li>
-  <li>JavaScript, HTML/CSSで制作</li>
-  <li>リンクは<a href="https://github.com/misorange/CCC">こちら</a></li>
-  <p></p>
-
-  </ul>
-  <div class="carousel_2"></div>
-
-  <br>
-
-  <h2>スキル</h2>
-  <p><strong>自主的に学習した</strong></p>
-  <li>Python</li>
-  <li>JavaScript</li>
-  <li>HTML/CSS</li>
-  <p><strong>授業で学習した</strong></p>
-
-  <li>Scratch</li>
-  <li>Deeds-DCS</li>
-  <li>MakeCode for micro:bit</li>
-  <li>Arduino</li>
-  <li>ArduinoIDE</li>
-  <li>Tinkercad</li>
-  <li>C++</li>
-  <p><strong>学習したい</strong></p>
-  <li>Unreal Engine5</li>
-  <li>Unity</li>
-  <li>GameMaker</li>
-  <li>歴史能力検定(世界史)</li>
-  <li>TOEIC</li>
-
-  <h2>コンタクト</h2>
-  <li>メールアドレス : kuroma.un96@gmail.com</li>
-  <li>github : <a href="https://github.com/kuroma514">https://github.com/kuroma514</a></li>
+    <h2 id="contact">コンタクト</h2>
+    <ul>
+      <li>メールアドレス : kuroma.un96@gmail.com</li>
+      <li>github : <a href="https://github.com/kuroma514">https://github.com/kuroma514</a></li>
+    </ul>
+  </div>
 </body>
 <!-- ここまで本文終了 -->
 
