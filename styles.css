@@ -213,8 +213,8 @@ table {
 
 /* カルーセルの外枠 */
 .carousel_1 {
-  width: 364px;
-  height: 200px;
+  width: 546px;
+  height: 300px;
   display: flex;
   /* 子要素を横に並べる */
   overflow: hidden;
@@ -292,7 +292,7 @@ table {
 
 .carousel_2> :first-child {
   animation-name: scroll;
-  animation-duration: 20s;
+  animation-duration: 12s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
 }
